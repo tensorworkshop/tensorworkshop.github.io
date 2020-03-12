@@ -249,11 +249,11 @@ p {
     .navbar-nav>li>a {
         color: #000 !important; 
         font-size: 18px;
-        font-weight: 500;
-        font-family: sans-serif;
+        font-weight: 400;
+        font-family: Cursive;
         /*text-transform: capitalize;*/
         /*letter-spacing: 1px;*/
-        margin: 0 6px;
+        /*margin: 0 1px;*/
     }
 
     .navbar-nav>li>a:hover,
@@ -623,6 +623,14 @@ p {
         margin-bottom: 15px;
     }
 
+    .hero p {
+        font-size: 3em;
+        color: #fff;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+
     .hero button {
         margin: 10px 0;
     }
@@ -677,11 +685,11 @@ p {
             margin-bottom: 15px;
         }
     }
-
+    /* 手机尺寸*/
     @media (max-width: 575px) {
         .hero {
             position: absolute;
-            top: 45%;
+            top: 25%;
             padding: 20px 0px;
         }
         .hero h1 {
@@ -1118,7 +1126,9 @@ p {
     }
 
     .story-desc>p {
-        font-size: 15px;
+        font-size: 18px;
+        text-align: justify;
+        text-justify: distribute;
     }
 
     .story-descb {
@@ -1164,6 +1174,15 @@ p {
             -webkit-transition: all .5s ease-in-out;
             transition: all .5s ease-in-out;
         }
+        .story-desc>p {
+            font-size: 18px;
+            text-align: justify;
+            text-justify: distribute;
+        }
+        .story-desc h2 {
+            font-size: 20px;
+            padding: 25px 0 5px;
+        }
     }
 
     @media (max-width: 585px) {
@@ -1174,6 +1193,15 @@ p {
             text-align: center;
             -webkit-transition: all .5s ease-in-out;
             transition: all .5s ease-in-out;
+        }
+        .story-desc>p {
+            font-size: 15px;
+            text-align: justify;
+            text-justify: distribute;
+        }
+        .story-desc h2 {
+            font-size: 20px;
+            padding: 25px 0 5px;
         }
     }
 
@@ -1186,11 +1214,18 @@ p {
             -webkit-transition: all .5s ease-in-out;
             transition: all .5s ease-in-out;
         }
+        .story-desc>p {
+            font-size: 15px;
+            text-align: justify;
+            text-justify: distribute;
+        }
     }
 
     @media (min-width: 1600px) {
         .story-desc>p {
-            font-size: 16px;
+            font-size: 18px;
+            text-align: justify;
+            text-justify: distribute;
         }
 
         .story-descb p {
@@ -1410,13 +1445,19 @@ p {
         line-height: 45px;
     }
 
+    .what-we-desc ul {
+        margin: 0;
+        list-style-position: inside;
+        padding: 0;
+    }
+
     .what-we-desc li {
         font-size: 20px;
         font-weight: 500;
         color: #000000;
         /*font-family: sans-serif;*/
         /*letter-spacing: 1px;*/
-        /*margin: 0 10px;*/
+        margin: 0;
     }
 
     .what-we-desc h5 {
@@ -1444,7 +1485,22 @@ p {
             height: 125px;
             line-height: 45px;
         }
+        .what-we-desc ul {
+            margin: 0;
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        .what-we-desc li {
+            font-size: 20px;
+            font-weight: 500;
+            color: #000000;
+            /*font-family: sans-serif;*/
+            /*letter-spacing: 1px;*/
+            margin: 0;
+        }
     }
+
 
     @media (min-width: 768px) and (max-width: 991px) {
 
@@ -1457,6 +1513,20 @@ p {
             flex: 0 0 50%;
             max-width: 50%!important;
         }
+        .what-we-desc ul {
+            margin: 0;
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        .what-we-desc li {
+            font-size: 20px;
+            font-weight: 500;
+            color: #000000;
+            /*font-family: sans-serif;*/
+            /*letter-spacing: 1px;*/
+            margin: 0;
+        }
     }
 
     @media (max-width: 575px) {
@@ -1466,15 +1536,21 @@ p {
             max-width: 80%!important;
             margin: auto;
         }
-    }
-
-    @media (max-width: 575px) {
-        .what-we-do .col-sm-6 {
-            -ms-flex: 0 0 95%;
-            flex: 0 0 95%;
-            max-width: 95%!important;
-            margin: auto;
+        .what-we-desc ul {
+            margin: 0;
+            list-style-position: inside;
+            padding: 0;
         }
+
+        .what-we-desc li {
+            font-size: 15px;
+            font-weight: 500;
+            color: #000000;
+            /*font-family: sans-serif;*/
+            /*letter-spacing: 1px;*/
+            margin: 0;
+        }
+
     }
 
     @media (min-width: 1600px) {
