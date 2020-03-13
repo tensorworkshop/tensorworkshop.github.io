@@ -185,7 +185,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         this.period = parseInt(period, 10) || 2000;
         this.txt = '';
         this.tick();
-        this.isDeleting = false;
+        this.isDeleting = true;
     };
 
     TxtType.prototype.tick = function() {
@@ -193,7 +193,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         var fullTxt = this.toRotate[i];
 
         if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
         } else {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
@@ -217,6 +217,8 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         setTimeout(function() {
         that.tick();
         }, delta);
+
+
     };
 
     window.onload = function() {
@@ -231,7 +233,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0em solid #fff}";
         document.body.appendChild(css);
     };  
 
