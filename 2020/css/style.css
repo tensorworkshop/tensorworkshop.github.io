@@ -1402,6 +1402,11 @@ p {
             font-size: 15px;
         }
 
+        .story-desc p7 {
+            color: #000000;
+            font-size: 13px;
+        }
+
         .story-desc li {
             color: #000000;
             font-size: 13px;
@@ -1424,6 +1429,11 @@ p {
             line-height:32px;
             color: #000000;
             font-size: 20px;
+        }
+
+        .story-desc p7 {
+            color: #000000;
+            font-size: 16px;
         }
     }
 
@@ -1767,7 +1777,7 @@ p {
 
         .what-we-desc h7 {
             height: 22px;
-            font-size: 17px;
+            font-size: 15px;
             line-height: 22px;
         }
     }
