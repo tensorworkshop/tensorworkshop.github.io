@@ -233,16 +233,16 @@ p {
 
 
     .navbar-nav>li {
-        height: 65px;
-        line-height: 65px;
+        height: 55px;
+        line-height: 45px;
         border-bottom: 3px solid rgba(0, 0, 0, 0);
-        transition: all .5s ease-in-out;
+        /*border-left: solid 1px #2196F3*/ /*菜单边框*/
     }
 
     .navbar-nav>li:hover,
     .navbar-nav>li:active {
-        border-bottom: 2px solid #2196f3;
-        background: #f0f0f0;
+        border-bottom: 5px solid #2196f3;
+        background: #ededed;
     }
 
     .navbar-nav>li>a {
@@ -251,7 +251,16 @@ p {
         font-weight: 500;
         font-family: "hine", sans-serif;
         /*text-transform: uppercase;*/
-        /*letter-spacing: 1px;*/
+        /*letter-spacing: 0.7px;*/
+        /*margin: 0 1px;*/
+    }
+    .navbar-nav>li>xx {
+        color: #000000 !important; 
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "hine", sans-serif;
+        /*text-transform: uppercase;*/
+        /*letter-spacing: 0.7px;*/
         /*margin: 0 1px;*/
     }
 
@@ -574,14 +583,14 @@ p {
 
     .carousel-fade {
         position: relative;
-        height: 55vh;
+        height: 35vh;
     }
 
     .hero {
         position: absolute;
-        top: 25%;
+        top: 16%;
         left: 50%;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.6);
         border: 0px solid #fff;
         padding: 40px;
         z-index: 3;
@@ -657,9 +666,9 @@ p {
         height: 100vh;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 900px) {
         .hero h1 {
-            font-size: 2.5em;
+            font-size: 2em;
             color: #fff;
             font-weight: 500;
             width: 500px;
@@ -681,7 +690,7 @@ p {
     @media (max-width: 575px) {
         .hero {
             position: absolute;
-            top: 25%;
+            top: 17%;
             padding: 20px 0px;
         }
         .hero h1 {
@@ -707,7 +716,7 @@ p {
     @media (max-width: 420px) {
         .hero {
             position: absolute;
-            top: 25%;
+            top: 18%;
             padding: 20px 0;
             border: 3px solid #fff;
         }
@@ -737,7 +746,7 @@ p {
 
       .home-p {
         z-index: 1;
-        padding: 18px 0;
+        padding: 70px 0;
         position: relative;
       }
 
@@ -799,6 +808,12 @@ p {
         .home-p.breadcrumbs-lg {
           padding: 100px 0;
         }
+
+        .home-p {
+            z-index: 1;
+            padding: 70px 0;
+            position: relative;
+          }
         .home-p h1 {
             color: #fff;
             font-size: 25px;
@@ -819,6 +834,12 @@ p {
           padding: 20px 0;
         }
 
+        .home-p {
+            z-index: 1;
+            padding: 70px 0;
+            position: relative;
+          }
+
         .home-p h1 {
           font-size: 19px;
           /*line-height: 40px;*/
@@ -834,7 +855,29 @@ p {
 
         .home-p {
             z-index: 1;
-            padding: 10px 0;
+            padding: 35px 0;
+            position: relative;
+          }
+        .home-p,
+        .home-p.breadcrumbs-lg {
+          padding: 15px 0;
+        }
+
+        .home-p h1 {
+          font-size: 15px;
+          /*line-height: 40px;*/
+        }
+
+        .home-p p {
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 600px) {
+
+        .home-p {
+            z-index: 1;
+            padding: 35px 0;
             position: relative;
           }
         .home-p,
@@ -875,10 +918,10 @@ p {
     }
 
     .heading-border-light {
-        width: 30px;
+        width: 300px;
         height: 5px;
         background-color: #2196f3;
-        margin: 0 0 20px 0;
+        margin: 0 0 10px 0;
     }
 
     .title-bar p {
@@ -921,6 +964,22 @@ p {
             padding-bottom: 40px;
             margin: 0 auto;
             max-width: 700px;
+        }
+
+        .heading-border-light {
+            width: 300px;
+            height: 5px;
+            background-color: #2196f3;
+            margin: 0 0 20px 0;
+        }
+    }
+
+    @media (max-width: 420px) {
+        .heading-border-light {
+            width: 220px;
+            height: 5px;
+            background-color: #2196f3;
+            margin: 0 0 20px 0;
         }
     }
 
@@ -1163,7 +1222,7 @@ p {
     .story-desc p4 {
         line-height:40px;
         color: #000000;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .story-desc h5 {
@@ -1361,6 +1420,11 @@ p {
             color: #867f7f;
             font-size: 16px;
         }
+        .story-desc p4 {
+            line-height:32px;
+            color: #000000;
+            font-size: 20px;
+        }
     }
 
 /*====================================================
@@ -1425,15 +1489,15 @@ p {
     .desc-comp-offer-cont {
         margin-bottom: 10px;
         box-shadow: 3px 3px 10px 1px rgba(158, 158, 158, 0.68);
-        -webkit-transition: all .5s ease-in-out;
-        transition: all .5s ease-in-out;
+        /*-webkit-transition: all .5s ease-in-out;*/
+        /*transition: all .5s ease-in-out;*/
     }
 
     .desc-comp-offer-cont:hover {
-        margin-bottom: 10px;
-        border-bottom: 5px solid #2196f3;
-        margin-top: -5px;
-        cursor: pointer;
+        /*margin-bottom: 10px;*/
+        /*border-bottom: 5px solid #2196f3;*/
+        /*margin-top: -5px;*/
+        /*cursor: pointer;*/
     }
 
     .desc-comp-offer .btn-green {
@@ -1481,6 +1545,7 @@ p {
     }
 
     .desc-comp-offer-cont p {
+        color: #000000;
         padding: 15px 10px;
         font-size: 18px;
         text-align: justify;
@@ -1569,7 +1634,7 @@ p {
     @media (min-width: 1600px) {
         .desc-comp-offer-cont p {
             padding: 15px 10px;
-            font-size: 18px;
+            font-size: 17px;
         }
 
         .desc-comp-offer h3{
@@ -1623,6 +1688,10 @@ p {
         font-size: 14px;
     }
 
+    .what-we-desc p1 {
+        font-size: 16px;
+    }
+
     @media (min-width: 992px) and (max-width: 1199px) {
         .what-we-desc i {
             float: left;
@@ -1662,6 +1731,19 @@ p {
             max-width: 95%!important;
             margin: auto;
         }
+    }
+
+    @media (max-width: 420px) {
+        .what-we-do .col-sm-6 {
+            -ms-flex: 0 0 95%;
+            flex: 0 0 95%;
+            max-width: 95%!important;
+            margin: auto;
+        }
+
+        .what-we-desc p1 {
+        font-size: 14px;
+    }
     }
 
     @media (min-width: 1600px) {
@@ -2057,7 +2139,7 @@ p {
 
     #footer-bottom {
         background-color: rgba(0, 0, 0, 0.8);
-        padding: 30px 0;
+        padding: 15px 0;
     }
 
     #footer-copyrights p {

@@ -15,7 +15,7 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet"> -->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate/animate.min.css">
+    <!-- <link rel="stylesheet" href="css/animate/animate.min.css"> -->
     <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -49,7 +49,7 @@
 
                 <li class="nav-item" ><a class="nav-link smooth-scroll" href="accepted_papers.html"> Accepted Papers </a></li>
 
-                <li class="nav-item" ><a class="nav-link smooth-scroll" href="organizers.html"> Organizations </a></li>
+                <li class="nav-item" ><a class="nav-link smooth-scroll" href="organization.html"> Organization </a></li>
 
                 <li class="nav-item" ><a class="nav-link smooth-scroll" href="attending.html"> Attending </a></li>
 
@@ -90,22 +90,30 @@
 <!--====================================================
                        HOME-P
 ======================================================-->
-    <div id="home-p" class="home-p text-center bg-gradiant">
-      <h1 class="wow fadeInUp" data-wow-delay="0.1s">International Workshop on Tensor Network Representations in Machine Learning</h1>
-    </div>
-
+    <section id="home">
+      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel"> 
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active slides">
+              <div class="overlay"></div>
+              <div class="slide-1"></div>
+                <div class="hero ">
+                  <hgroup>
+                      <h1>International Workshop on Tensor Network Representations in Machine Learning </h1>        
+                      <h3>In conjunction with IJCAI-2020 @ July 11-13th, Yokohama, Japan</h3>
+                  </hgroup>
+                </div>           
+            </div> 
+        </div> 
+      </div> 
+    </section>
     <div class="container-fluid">
       <div class="col-md-12">
         <div class="story-desc">
 
-          <br><br>
+          <br><br><br>
           <div class="container ">
             <div class="row">
-              <div class="col-md-6 ">
-                <div class="story-himg story-himg-middle-u">
-                  <img src="img/img/image-2.jpg" class="img-fluid wow fadeInUp" data-wow-delay="0.1s" alt="">
-                </div>
-              </div>
               <div class="col-md-6">
                 <div class="story-desc story-desc-middle ">
                   <h2>Andrzej Cichocki</h2>
@@ -113,17 +121,17 @@
                   <p2>Skoltech (Tentative)</p2>
                 </div>
               </div>
+              <div class="col-md-6 ">
+                <div class="story-himg story-himg-middle-u">
+                  <img src="img/img/image-2.jpg" class="img-fluid">
+                </div>
+              </div>
             </div>
           </div>
 
-          <br><br>
+          <br><br><br><br>
           <div class="container ">
             <div class="row">
-              <div class="col-md-6 ">
-                <div class="story-himg story-himg-middle-u">
-                  <img src="img/img/image-2.jpg" class="img-fluid wow fadeInUp" data-wow-delay="0.1s" alt="">
-                </div>
-              </div>
               <div class="col-md-6">
                 <div class="story-desc story-desc-middle ">
                   <h2>Michael Ng</h2>
@@ -131,8 +139,34 @@
                   <p2>The University of Hong Kong</p2>
                 </div>
               </div>
+              <div class="col-md-6 ">
+                <div class="story-himg story-himg-middle-u">
+                  <img src="img/img/image-2.jpg" class="img-fluid">
+                </div>
+              </div>
             </div>
           </div>
+
+
+          <br><br><br><br>
+          <div class="container ">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="story-desc story-desc-middle ">
+                  <h2>Anwar Walid</h2>
+                  <div class="heading-border-light"></div>
+                  <p2>Nokia-Bell Labs</p2>
+                </div>
+              </div>
+              <div class="col-md-6 ">
+                <div class="story-himg story-himg-middle-u">
+                  <img src="img/img/image-2.jpg" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
@@ -149,12 +183,12 @@
 <!--====================================================
                       FOOTER
 ======================================================--> 
-    <footer> 
+    <footer class="footer"> 
         <div id="footer-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div id="footer-copyrights">
+                        <div>
                             <p>Copyrights &copy; 2020 All Rights Reserved.</p>
                         </div>
                     </div> 
