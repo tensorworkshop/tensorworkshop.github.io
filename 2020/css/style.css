@@ -606,7 +606,7 @@ p {
     }
 
     .hero h1 {
-        font-size: 3.5em;
+        font-size: 3em;
         color: #fff;
         font-weight: 500;
         width: 1400px;
@@ -721,7 +721,7 @@ p {
             /*border: 3px solid #fff;*/
         }
         .hero h1 {
-            font-size: 1.7em;
+            font-size: 1.5em;
             color: #fff;
             font-weight: 500;
             width: 350px;
