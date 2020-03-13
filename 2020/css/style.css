@@ -588,7 +588,7 @@ p {
 
     .hero {
         position: absolute;
-        top: 16%;
+        top: 17%;
         left: 50%;
         background: rgba(0, 0, 0, 0.6);
         border: 0px solid #fff;
@@ -718,7 +718,7 @@ p {
             position: absolute;
             top: 18%;
             padding: 20px 0;
-            border: 3px solid #fff;
+            /*border: 3px solid #fff;*/
         }
         .hero h1 {
             font-size: 1.7em;
@@ -1193,7 +1193,7 @@ p {
     }
 
     .story-desc {
-        padding: 0 40px 40px 10px;
+        /*padding: 0 40px 40px 10px;*/
     }
 
     .story-desc h2 {
@@ -1488,7 +1488,7 @@ p {
 
     .desc-comp-offer-cont {
         margin-bottom: 10px;
-        box-shadow: 3px 3px 10px 1px rgba(158, 158, 158, 0.68);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
         /*-webkit-transition: all .5s ease-in-out;*/
         /*transition: all .5s ease-in-out;*/
     }
@@ -1584,7 +1584,7 @@ p {
             margin-top: 20px;
         }
         .desc-comp-offer-cont p {
-            padding: 15px 10px;
+            padding: 0;
             font-size: 15px;
         }
         .desc-comp-offer h3{
@@ -1604,7 +1604,7 @@ p {
             margin: 20px auto;
         }
         .desc-comp-offer-cont p {
-            padding: 15px 10px;
+            padding: 0;
             font-size: 15px;
         }
         .desc-comp-offer h3{
@@ -1621,7 +1621,7 @@ p {
         }
 
         .desc-comp-offer-cont p {
-            padding: 15px 10px;
+            padding: 0;
             font-size: 14px;
         }
 
@@ -1633,7 +1633,7 @@ p {
 
     @media (min-width: 1600px) {
         .desc-comp-offer-cont p {
-            padding: 15px 10px;
+            padding: 0;
             font-size: 17px;
         }
 
@@ -1686,6 +1686,14 @@ p {
 
     .what-we-desc p {
         font-size: 14px;
+    }
+    /*标题下文字*/
+    .what-we-desc pss {
+        float: left;
+        font-size: 35px;
+        margin-right: 20px;
+        height: 95px;
+        line-height: 45px;
     }
 
     .what-we-desc p1 {
@@ -1742,13 +1750,25 @@ p {
         }
 
         .what-we-desc p1 {
-        font-size: 14px;
-    }
+            font-size: 14px;
+        }
+
+        .what-we-desc h7 {
+            height: 16px;
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 
     @media (min-width: 1600px) {
         .what-we-desc p {
             font-size: 15px;
+        }
+
+        .what-we-desc h7 {
+            height: 22px;
+            font-size: 17px;
+            line-height: 22px;
         }
     }
 
