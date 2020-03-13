@@ -265,7 +265,8 @@ p {
         /*line-height: 45px;*/
         /*padding-bottom: 1px;*/
         border-bottom: 3px solid #2196f3;
-        background: #ffffff;
+        background: #ffffff; /*菜单栏滑动背景颜色*/
+
     }
 
     .navbar-nav>li>a {
