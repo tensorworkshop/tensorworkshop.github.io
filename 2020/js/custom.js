@@ -185,20 +185,24 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         this.period = parseInt(period, 10) || 2000;
         this.txt = '';
         this.tick();
-        this.isDeleting = true;
+        this.isDeleting = trues;
     };
 
     TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
+        var i = (this.loopNum) % this.toRotate.length;
         var fullTxt = this.toRotate[i];
 
         if (this.isDeleting) {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
         } else {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
+        // this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>'+'<font color="#fff">'+ '|'+'</font>';;
+        // 解决光标问题
+        this.el.innerHTML = '<span class="wrap" style="border-right: 0.08em solid #fff">'+this.txt+'</span>'
         }
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+        
 
         var that = this;
         var delta = 200 - Math.random() * 100;
@@ -233,7 +237,9 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
+        // 可调节打字光标有无和粗细
         css.innerHTML = ".typewrite > .wrap { border-right: 0em solid #fff}";
+        css.innerHTML = ".typewrite > .wrap2 { color: #fff}";
         document.body.appendChild(css);
     };  
 
