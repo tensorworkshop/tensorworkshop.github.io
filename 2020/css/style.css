@@ -1517,7 +1517,7 @@ p {
 
     .desc-comp-offer-cont {
         margin-bottom: 10px;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        /*box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);*/
         /*-webkit-transition: all .5s ease-in-out;*/
         /*transition: all .5s ease-in-out;*/
     }
@@ -1581,8 +1581,20 @@ p {
         text-justify: distribute;
     }
 
+    .desc-comp-offer-cont li {
+        color: #000000;
+        /*padding: 15px 10px;*/
+        font-size: 18px;
+        text-align: justify;
+        text-justify: distribute;
+    }
+
     .desc-comp-offer-cont a {
-        padding: 0px 10px;
+        /*color: #000000;*/
+        /*padding: 15px 10px;*/
+        font-size: 18px;
+        text-align: justify;
+        text-justify: distribute;
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
@@ -1616,6 +1628,17 @@ p {
             padding: 0;
             font-size: 15px;
         }
+
+        .desc-comp-offer-cont li {
+            padding: 0;
+            font-size: 15px;
+        }
+
+        .desc-comp-offer-cont a {
+            padding: 0;
+            font-size: 15px;
+        }
+
         .desc-comp-offer h3{
             font-size: 20px;
             text-transform: none;
@@ -1636,6 +1659,17 @@ p {
             padding: 0;
             font-size: 15px;
         }
+
+        .desc-comp-offer-cont li {
+            padding: 0;
+            font-size: 15px;
+        }
+
+        .desc-comp-offer-cont a {
+            padding: 0;
+            font-size: 15px;
+        }
+
         .desc-comp-offer h3{
             font-size: 20px;
             text-transform: none;
@@ -1654,6 +1688,16 @@ p {
             font-size: 14px;
         }
 
+        .desc-comp-offer-cont li {
+            padding: 0;
+            font-size: 14px;
+        }
+
+        .desc-comp-offer-cont a {
+            padding: 0;
+            font-size: 14px;
+        }
+
         .desc-comp-offer h3{
             font-size: 18px;
             text-transform: none;
@@ -1662,6 +1706,16 @@ p {
 
     @media (min-width: 1600px) {
         .desc-comp-offer-cont p {
+            padding: 0;
+            font-size: 17px;
+        }
+
+        .desc-comp-offer-cont li {
+            padding: 0;
+            font-size: 17px;
+        }
+
+        .desc-comp-offer-cont a {
             padding: 0;
             font-size: 17px;
         }
