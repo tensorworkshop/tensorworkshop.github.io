@@ -260,21 +260,6 @@ p {
         /*margin: 0;*/
     }
 
-    .navbar-nav>li>a2 {
-        color: #000000 !important; 
-        font-size: 1.21em;
-        font-weight: 500;
-        font-family: sans-serif;
-
-        height: auto;
-        line-height: 5px;
-        margin-top: 17px;
-        border-right: 2px solid #fff;
-        /*text-transform: uppercase;*/
-        /*letter-spacing: 0.0em;*/
-        /*margin: 0;*/
-    }
-
     .navbar-nav>li>a:hover,
     .navbar-nav>li>a:active {
         color: #2196f3!important;
