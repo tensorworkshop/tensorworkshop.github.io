@@ -1568,14 +1568,14 @@ p {
     }
 
     .desc-comp-offer-cont h3 {
-        padding: 30px 10px 0 10px;
+        /*padding: 30px 10px 0 10px;*/
         font-size: 18px;
         text-transform: none;
     }
 
     .desc-comp-offer-cont p {
         color: #000000;
-        padding: 15px 10px;
+        /*padding: 15px 10px;*/
         font-size: 18px;
         text-align: justify;
         text-justify: distribute;
@@ -1685,17 +1685,17 @@ p {
 
         .desc-comp-offer-cont p {
             padding: 0;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .desc-comp-offer-cont li {
             padding: 0;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .desc-comp-offer-cont a {
             padding: 0;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .desc-comp-offer h3{
