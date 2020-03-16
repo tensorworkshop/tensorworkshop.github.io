@@ -205,7 +205,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         
 
         var that = this;
-        var delta = 100 - Math.random() * 50;
+        var delta = 80 - Math.random() * 40;
 
         if (this.isDeleting) { delta /= 2; }
 
@@ -215,7 +215,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;
-        delta = 250;
+        delta = 200;
         }
 
         setTimeout(function() {
