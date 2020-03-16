@@ -205,7 +205,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         
 
         var that = this;
-        var delta = 200 - Math.random() * 100;
+        var delta = 100 - Math.random() * 50;
 
         if (this.isDeleting) { delta /= 2; }
 
@@ -215,7 +215,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;
-        delta = 500;
+        delta = 250;
         }
 
         setTimeout(function() {
@@ -232,6 +232,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
             var period = elements[i].getAttribute('data-period');
             if (toRotate) {
               new TxtType(elements[i], JSON.parse(toRotate), period);
+
             }
         }
         // INJECT CSS
