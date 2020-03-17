@@ -1591,6 +1591,8 @@ p {
     }
 
     .desc-comp-offer-cont h5 {
+
+        display : inline;
         color: #000000;
         padding: 0;
         margin: 0;
@@ -1600,6 +1602,16 @@ p {
     }
 
     .desc-comp-offer-cont p {
+        display : inline;
+        color: #000000;
+        /*padding: 15px 10px;*/
+        font-size: 18px;
+        text-align: justify;
+        text-justify: distribute;
+    }
+
+    .desc-comp-offer-cont p1 {
+        white-space:nowrap;
         color: #000000;
         /*padding: 15px 10px;*/
         font-size: 18px;
@@ -1642,11 +1654,12 @@ p {
             max-width: 33%!important;
         }
         .desc-comp-offer h3{
-            font-size: 22px;
+            font-size: 18px;
             text-transform: none;
         }
 
         .desc-comp-offer-cont h5 {
+            display : inline;
             color: #000000;
             font-weight: 600;
         }
@@ -1657,11 +1670,13 @@ p {
             margin-top: 20px;
         }
         .desc-comp-offer-cont p {
+            display : inline;
             padding: 0;
             font-size: 15px;
         }
 
         .desc-comp-offer-cont h5 {
+            display : inline;
             color: #000000;
             padding: 0;
             margin: 0;
@@ -1681,7 +1696,7 @@ p {
         }
 
         .desc-comp-offer h3{
-            font-size: 20px;
+            font-size: 15px;
             text-transform: none;
         }
     }
@@ -1697,6 +1712,7 @@ p {
             margin: 20px auto;
         }
         .desc-comp-offer-cont p {
+            display : inline;
             padding: 0;
             font-size: 15px;
         }
@@ -1707,6 +1723,8 @@ p {
         }
 
         .desc-comp-offer-cont h5 {
+            display : inline;
+
             color: #000000;
             padding: 0;
             margin: 0;
@@ -1721,7 +1739,7 @@ p {
         }
 
         .desc-comp-offer h3{
-            font-size: 20px;
+            font-size: 15px;
             text-transform: none;
         }
     }
@@ -1734,11 +1752,13 @@ p {
         }
 
         .desc-comp-offer-cont p {
+            display : inline;
             padding: 0;
             font-size: 13px;
         }
 
         .desc-comp-offer-cont h5 {
+            display : inline;
             color: #000000;
             padding: 0;
             margin: 0;
@@ -1759,13 +1779,21 @@ p {
 
         .desc-comp-offer h3{
             color: #000000;
-            font-size: 18px;
+            font-size: 13px;
             text-transform: none;
         }
     }
 
     @media (min-width: 1600px) {
         .desc-comp-offer-cont p {
+            display : inline;
+            padding: 0;
+            font-size: 17px;
+        }
+
+        .desc-comp-offer-cont p1 {
+            display : inline;
+            /*white-space:nowrap;*/
             padding: 0;
             font-size: 17px;
         }
@@ -1781,11 +1809,14 @@ p {
         }
 
         .desc-comp-offer h3{
-            font-size: 25px;
+            font-size: 17px;
             text-transform: none;
         }
 
         .desc-comp-offer-cont h5 {
+            margin: 0px; 
+            padding: 0px;
+            display : inline;
             color: #000000;
             padding: 0;
             margin: 0;
