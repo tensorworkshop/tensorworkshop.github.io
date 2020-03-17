@@ -347,6 +347,21 @@ p {
             border-bottom: 2px solid #2196f3;
             border-radius: 0;
         }
+
+        .navbar-nav>li>a {
+            color: #000000 !important; 
+            font-size: 1.1em;
+            font-weight: 500;
+            font-family: sans-serif;
+
+            height: auto;
+            line-height: 5px;
+            margin-top: 17px;
+            border-right: 2px solid #2196f3;
+            /*text-transform: uppercase;*/
+            /*letter-spacing: 0.0em;*/
+            /*margin: 0;*/
+        }
     } 
 
     @media (min-width: 992px) and (max-width: 1200px) {
@@ -424,6 +439,7 @@ p {
         }
 
         .navbar-nav>li>a {
+
             border-right: 2px solid #fff;
             /*text-transform: uppercase;*/
             /*letter-spacing: 0.0em;*/
@@ -1569,8 +1585,18 @@ p {
 
     .desc-comp-offer-cont h3 {
         /*padding: 30px 10px 0 10px;*/
+        color: #000000;
         font-size: 18px;
         text-transform: none;
+    }
+
+    .desc-comp-offer-cont h5 {
+        color: #000000;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        text-transform: none;
+        font-weight: 600;
     }
 
     .desc-comp-offer-cont p {
@@ -1592,6 +1618,7 @@ p {
     .desc-comp-offer-cont a {
         /*color: #000000;*/
         /*padding: 15px 10px;*/
+
         font-size: 18px;
         text-align: justify;
         text-justify: distribute;
@@ -1618,6 +1645,11 @@ p {
             font-size: 22px;
             text-transform: none;
         }
+
+        .desc-comp-offer-cont h5 {
+            color: #000000;
+            font-weight: 600;
+        }
     }
 
     @media (max-width: 767px) {
@@ -1627,6 +1659,15 @@ p {
         .desc-comp-offer-cont p {
             padding: 0;
             font-size: 15px;
+        }
+
+        .desc-comp-offer-cont h5 {
+            color: #000000;
+            padding: 0;
+            margin: 0;
+            font-size: 15px;
+            text-transform: none;
+            font-weight: 600;
         }
 
         .desc-comp-offer-cont li {
@@ -1665,6 +1706,15 @@ p {
             font-size: 15px;
         }
 
+        .desc-comp-offer-cont h5 {
+            color: #000000;
+            padding: 0;
+            margin: 0;
+            font-size: 15px;
+            text-transform: none;
+            font-weight: 600;
+        }
+
         .desc-comp-offer-cont a {
             padding: 0;
             font-size: 15px;
@@ -1688,6 +1738,15 @@ p {
             font-size: 13px;
         }
 
+        .desc-comp-offer-cont h5 {
+            color: #000000;
+            padding: 0;
+            margin: 0;
+            font-size: 13px;
+            text-transform: none;
+            font-weight: 600;
+        }
+
         .desc-comp-offer-cont li {
             padding: 0;
             font-size: 13px;
@@ -1699,6 +1758,7 @@ p {
         }
 
         .desc-comp-offer h3{
+            color: #000000;
             font-size: 18px;
             text-transform: none;
         }
@@ -1723,6 +1783,15 @@ p {
         .desc-comp-offer h3{
             font-size: 25px;
             text-transform: none;
+        }
+
+        .desc-comp-offer-cont h5 {
+            color: #000000;
+            padding: 0;
+            margin: 0;
+            font-size: 17px;
+            text-transform: none;
+            font-weight: 600;
         }
     }
 
