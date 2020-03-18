@@ -956,7 +956,7 @@ p {
         width: 300px;
         height: 5px;
         background-color: #2196f3;
-        margin: 0 0 10px 0;
+        margin: 0 0 5px 0;
     }
 
     .title-bar p {
@@ -1005,16 +1005,16 @@ p {
             width: 300px;
             height: 5px;
             background-color: #2196f3;
-            margin: 0 0 20px 0;
+            margin: 0 0 5px 0;
         }
     }
 
     @media (max-width: 420px) {
         .heading-border-light {
             width: 220px;
-            height: 5px;
+            height: 3px;
             background-color: #2196f3;
-            margin: 0 0 20px 0;
+            margin: 0 0 0 0;
         }
     }
 
@@ -1574,6 +1574,16 @@ p {
     }
 
     .caption i {
+        margin: 30% 4px;
+        border: 2px solid #fff;
+        cursor: pointer;
+        font-size: 25px;
+        border-radius: 50%;
+        padding: 5px;
+        transition: border 0.2s ease, font-size 0.2s ease;
+    }
+
+    .caption th {
         margin: 30% 4px;
         border: 2px solid #fff;
         cursor: pointer;
