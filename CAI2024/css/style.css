@@ -618,12 +618,12 @@ p {
 
     .carousel-fade {
         position: relative;
-        height: 35vh;
+        height: 30vh;
     }
 
     .hero {
         position: absolute;
-        top: 13%;
+        top: 14%;
         left: 50%;
         background: rgba(0, 0, 0, 0.4);
         border: 0px solid #fff;
@@ -703,7 +703,7 @@ p {
 
     @media (max-width: 900px) {
         .hero h1 {
-            font-size: 2em;
+            font-size: 1.5em;
             color: #fff;
             font-weight: 500;
             width: 500px;
@@ -720,16 +720,23 @@ p {
             line-height: 25px;
             margin-bottom: 15px;
         }
+        .hero h4 {
+            font-size: 1em;
+            color: #fff;
+            letter-spacing: 2px;
+            line-height: 25px;
+            margin-bottom: 15px;
+        }
     }
 
     @media (max-width: 575px) {
         .hero {
             position: absolute;
             top: 13%;
-            padding: 20px 0px;
+            padding: 50px 20px;
         }
         .hero h1 {
-            font-size: 1.9em;
+            font-size: 1.2em;
             color: #fff;
             font-weight: 500;
             width: 400px;
@@ -746,17 +753,24 @@ p {
             line-height: 25px;
             margin-bottom: 15px;
         }
+        .hero h4 {
+            font-size: .9em;
+            color: #fff;
+            letter-spacing: 2px;
+            line-height: 25px;
+            margin-bottom: 15px;
+        }
     }
 
     @media (max-width: 435px) {
         .hero {
             position: absolute;
             top: 16%;
-            padding: 20px 0;
+            padding: 15px 0;
             /*border: 3px solid #fff;*/
         }
         .hero h1 {
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: #fff;
             font-weight: 500;
             width: 350px;
@@ -767,6 +781,13 @@ p {
             margin-bottom: 30px;
         }
         .hero h3 {
+            font-size: .9em;
+            color: #fff;
+            letter-spacing: 2px;
+            line-height: 25px;
+            margin-bottom: 15px;
+        }
+        .hero h4 {
             font-size: .9em;
             color: #fff;
             letter-spacing: 2px;
