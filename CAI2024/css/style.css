@@ -623,7 +623,7 @@ p {
 
     .hero {
         position: absolute;
-        top: 14%;
+        top: 13%;
         left: 50%;
         background: rgba(0, 0, 0, 0.4);
         border: 0px solid #fff;
@@ -641,7 +641,7 @@ p {
     }
 
     .hero h1 {
-        font-size: 3em;
+        font-size: 2em;
         color: #fff;
         font-weight: 500;
         width: 1400px;
