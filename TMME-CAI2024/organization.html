@@ -21,6 +21,24 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Core Stylesheets -->
     <link rel="stylesheet" href="css/about.css">
+    <style type="text/css">
+      #test a:link {
+        color:#e82ecc;
+        text-decoration:none;
+      }
+      #test a:visited {
+        color:#e82ecc;
+        text-decoration:none;
+      }
+      #test a:hover {
+        color:blue;
+        text-decoration:none;
+      }
+      #test a:active {
+        color:#850b72;
+        text-decoration:none;
+      }
+    </style>
 </head>
 
 <body id="page-top">
@@ -46,7 +64,7 @@
 
                 <li class="nav-item" ><a class="nav-link smooth-scroll" href="CFP.html"> Call for Posters </a></li>
 
-                <li class="nav-item" ><a class="nav-link smooth-scroll" href="speakers.html"> Invited Speakers </a></li> 
+                <!-- <li class="nav-item" ><a class="nav-link smooth-scroll" href="speakers.html"> Invited Speakers </a></li>  -->
 
                 <li class="nav-item" ><a class="nav-link smooth-scroll" href="program.html"> Program </a></li> 
 
@@ -100,13 +118,19 @@
           <div class="carousel-item active slides">
             <div class="overlay"></div>
             <div class="slide-1"></div>
-            <div class="hero">
+            <div class="hero" id="test">
               <hgroup>
                 <!-- <h1>We Help 
                   <span ><a href="" class="typewrite" data-period="2000" data-type='[ " Business", " Startup"]'>
                 <span class="wrap"></span></a></span> </h1>  -->
-                <font color="#FFFFFF"><h3>International Workshop on</h3><h1><a><b>TMME: Tensor Models for Machine lEarning</h1><h3>-Empowering Efficiency, lnterpretability, and Reliability </h3></b></a></font>
-                <h5 style="text-transform: none;"><font color="#FFFFFF">In conjunction with IEEE CAI 2024 @ June 2024, Singapore</font></h5>
+                <font color="#FFFFFF">
+                  <h3>International Workshop on</h3>
+                  <h1><b>TMME: Tensor Models for Machine lEarning</h1>
+                  <h3>-Empowering Efficiency, lnterpretability, and Reliability </h3></b>
+                </font>
+                <h5 style="text-transform: none;">
+                  <font color="#FFFFFF">In conjunction with <b><a href="https://ieeecai.org/2024/" target="_blank" class="headlink"> IEEE CAI 2024 @ June 25-27 2024, Singapore</a></b></font>
+                </h5>
               </hgroup>
             </div>           
           </div> 
@@ -124,7 +148,7 @@
           <div class="container">
             <h2>Organizers</h2>
             <div class="heading-border-light"></div> 
-            <hgroup style="text-align:justify;" ><br>
+            <hgroup style="text-align:justify;" >
               <p4 ><a href=" https://qibinzhao.github.io" target="_blank"> <b>Qibin Zhao</b> </a> (RIKEN AIP, Japan) </p4><br>
               Bio: Qibin Zhao received a Ph.D. degree in computer science from Shanghai Jiao Tong University, China in 2009. He is currently a team leader at RIKEN Center for Advanced Intelligence Project (AIP). His research interests include machine learning, tensor factorization, and tensor networks. He has (co-)authored more than 200 publications and two monographs of tensor networks for dimensionality reduction and large-scale optimization (2016, 2017). He serves as Area Chair for NeurIPS, ICML, AISTATS, AAAI, IJCAI, ACML. He (co)-organized workshops related to tensor networks at NeurIPS 2020, 2021 and IJCAI 2020. He also co-organized the conference Quantum Techniques in Machine Learning (QTML 2021).<hr>
 
@@ -159,7 +183,7 @@
             <h2>Program Committee</h2>
             <div class="heading-border-light"></div> 
             
-            <hgroup><br>
+            <hgroup>
               <p4>The program committee members are still being recruited, and the current temporary list is as follows:</p4><br><br>
               <!-- <p4> Andrzej Cichocki (Skoltech) </p4><br> -->
               <!-- <p4> Ivan Oseledets (Skoltech) </p4><br> -->
@@ -204,7 +228,7 @@
           <div class="container">
             <h2>Contact Us</h2>
             <div class="heading-border-light"></div> 
-            <hgroup><br>
+            <hgroup>
               <p4> If you have any questions, comments or feedbacks regarding the workshop or need further information, please do not hesitate to send an email to: Yuning Qiu (yuning.qiu[at]riken.jp) and Andong Wang (andong.wang[at]riken.jp). </p4><br>
             </hgroup>
           </div>

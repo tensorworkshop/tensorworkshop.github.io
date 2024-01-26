@@ -623,7 +623,7 @@ p {
 
     .hero {
         position: absolute;
-        top: 15%;
+        top: 13.5%;
         left: 50%;
         background: rgba(0, 0, 0, 0.4);
         border: 0px solid #fff;
@@ -649,7 +649,7 @@ p {
         padding: 0;
         opacity: 1;
         text-transform: none;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         margin-bottom: 3px;
     }
 
@@ -701,7 +701,7 @@ p {
         height: 100vh;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1100px) {
 
         .hero h1 {
             font-size: 2em;
@@ -711,13 +711,13 @@ p {
             margin: 0;
             padding: 0;
             opacity: 1;
-            letter-spacing: 2px;
+            letter-spacing: 0px;
             margin-bottom: 3px;
         }
         .hero h3 {
             font-size: 1.4em;
             color: #fff;
-            letter-spacing: 2px;
+            letter-spacing: 0px;
             line-height: 25px;
             margin-bottom: 15px;
         }
@@ -730,10 +730,10 @@ p {
         }
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: 650px) {
         .hero {
             position: absolute;
-            top: 15%;
+            top: 13.5%;
             padding: 50px 20px;
         }
         .hero h1 {
@@ -744,34 +744,34 @@ p {
             margin: 0;
             padding: 0;
             opacity: 1;
-            letter-spacing: 2px;
+            letter-spacing: 0px;
             margin-bottom: 3px;
         }
         .hero h3 {
             font-size: 1em;
             color: #fff;
-            letter-spacing: 2px;
+            letter-spacing: 0px;
             line-height: 25px;
             margin-bottom: 15px;
         }
         .hero h5 {
             font-size: .8em;
             color: #fff;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             line-height: 25px;
             margin-bottom: 15px;
         }
     }
 
-    @media (max-width: 435px) {
+    @media (max-width: 510px) {
         .hero {
             position: absolute;
-            top: 15%;
+            top: 13%;
             padding: 30px 0;
             /*border: 3px solid #fff;*/
         }
         .hero h1 {
-            font-size: 1em;
+            font-size: 0.85em;
             color: #fff;
             font-weight: 500;
             width: 430px;
@@ -782,14 +782,14 @@ p {
             margin-bottom: 3px;
         }
         .hero h3 {
-            font-size: .8em;
+            font-size: .75em;
             color: #fff;
             letter-spacing: 1px;
             line-height: 25px;
             margin-bottom: 15px;
         }
         .hero h5 {
-            font-size: .7em;
+            font-size: .65em;
             color: #fff;
             letter-spacing: 1px;
             line-height: 25px;
@@ -978,7 +978,7 @@ p {
         width: 300px;
         height: 5px;
         background-color: #82026E;
-        margin: 0 0 5px 0;
+        margin: 0 0 10px 0;
     }
 
     .title-bar p {
@@ -1027,7 +1027,7 @@ p {
             width: 300px;
             height: 5px;
             background-color: #82026E;
-            margin: 0 0 5px 0;
+            margin: 0 0 10px 0;
         }
     }
 
@@ -1637,7 +1637,7 @@ p {
         display : inline;
         color: #000000;
         /*padding: 15px 10px;*/
-        font-size: 18px;
+        font-size: 19px;
         text-align: justify;
         text-justify: distribute;
     }
@@ -1654,7 +1654,7 @@ p {
     .desc-comp-offer-cont li {
         color: #000000;
         /*padding: 15px 10px;*/
-        font-size: 18px;
+        font-size: 19px;
         text-align: justify;
         text-justify: distribute;
     }
@@ -1663,7 +1663,7 @@ p {
         /*color: #000000;*/
         /*padding: 15px 10px;*/
 
-        font-size: 18px;
+        font-size: 19px;
         text-align: justify;
         text-justify: distribute;
     }
@@ -1704,7 +1704,7 @@ p {
         .desc-comp-offer-cont p {
             display : inline;
             padding: 0;
-            font-size: 15px;
+            font-size: 18px;
         }
 
         .desc-comp-offer-cont h5 {
@@ -1719,12 +1719,12 @@ p {
 
         .desc-comp-offer-cont li {
             padding: 0;
-            font-size: 15px;
+            font-size: 18px;
         }
 
         .desc-comp-offer-cont a {
             padding: 0;
-            font-size: 15px;
+            font-size: 18px;
         }
 
         .desc-comp-offer h3{
@@ -1746,12 +1746,12 @@ p {
         .desc-comp-offer-cont p {
             display : inline;
             padding: 0;
-            font-size: 15px;
+            font-size: 16px;
         }
 
         .desc-comp-offer-cont li {
             padding: 0;
-            font-size: 15px;
+            font-size: 16px;
         }
 
         .desc-comp-offer-cont h5 {
@@ -1767,7 +1767,7 @@ p {
 
         .desc-comp-offer-cont a {
             padding: 0;
-            font-size: 15px;
+            font-size: 16px;
         }
 
         .desc-comp-offer h3{
@@ -1786,7 +1786,7 @@ p {
         .desc-comp-offer-cont p {
             display : inline;
             padding: 0;
-            font-size: 13px;
+            font-size: 14px;
         }
 
         .desc-comp-offer-cont h5 {
@@ -1801,12 +1801,12 @@ p {
 
         .desc-comp-offer-cont li {
             padding: 0;
-            font-size: 13px;
+            font-size: 14px;
         }
 
         .desc-comp-offer-cont a {
             padding: 0;
-            font-size: 13px;
+            font-size: 14px;
         }
 
         .desc-comp-offer h3{
@@ -1820,7 +1820,7 @@ p {
         .desc-comp-offer-cont p {
             display : inline;
             padding: 0;
-            font-size: 17px;
+            font-size: 19px;
         }
 
         .desc-comp-offer-cont p1 {
@@ -1832,12 +1832,12 @@ p {
 
         .desc-comp-offer-cont li {
             padding: 0;
-            font-size: 17px;
+            font-size: 19px;
         }
 
         .desc-comp-offer-cont a {
             padding: 0;
-            font-size: 17px;
+            font-size: 19px;
         }
 
         .desc-comp-offer h3{

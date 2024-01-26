@@ -21,6 +21,24 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Core Stylesheets -->
     <link rel="stylesheet" href="css/about.css">
+    <style type="text/css">
+      #test a:link {
+        color:#e82ecc;
+        text-decoration:none;
+      }
+      #test a:visited {
+        color:#e82ecc;
+        text-decoration:none;
+      }
+      #test a:hover {
+        color:blue;
+        text-decoration:none;
+      }
+      #test a:active {
+        color:#850b72;
+        text-decoration:none;
+      }
+    </style>
 
 </head>
 
@@ -49,7 +67,7 @@
 
                 <li class="nav-item" ><a class="nav-link smooth-scroll" href="CFP.html"> Call for Posters </a></li>
 
-                <li class="nav-item" ><a class="nav-link smooth-scroll" href="speakers.html"> Invited Speakers </a></li> 
+                <!-- <li class="nav-item" ><a class="nav-link smooth-scroll" href="speakers.html"> Invited Speakers </a></li>  -->
 
                 <li class="nav-item" ><a class="nav-link smooth-scroll" href="program.html"> Program </a></li> 
 
@@ -105,13 +123,19 @@
           <div class="carousel-item active slides">
             <div class="overlay"></div>
             <div class="slide-1"></div>
-            <div class="hero">
+            <div class="hero" id="test">
               <hgroup>
                 <!-- <h1>We Help 
                   <span ><a href="" class="typewrite" data-period="2000" data-type='[ " Business", " Startup"]'>
                 <span class="wrap"></span></a></span> </h1>  -->
-                <font color="#FFFFFF"><h3>International Workshop on</h3><h1><a><b>TMME: Tensor Models for Machine lEarning</h1><h3>-Empowering Efficiency, lnterpretability, and Reliability </h3></b></a></font>
-                <h5 style="text-transform: none;"><font color="#FFFFFF">In conjunction with IEEE CAI 2024 @ June 2024, Singapore</font></h5>
+                <font color="#FFFFFF">
+                  <h3>International Workshop on</h3>
+                  <h1><b>TMME: Tensor Models for Machine lEarning</h1>
+                  <h3>-Empowering Efficiency, lnterpretability, and Reliability </h3></b>
+                </font>
+                <h5 style="text-transform: none;">
+                  <font color="#FFFFFF">In conjunction with <b><a href="https://ieeecai.org/2024/" target="_blank" class="headlink"> IEEE CAI 2024 @ June 25-27 2024, Singapore</a></b></font>
+                </h5>
               </hgroup>
             </div>           
           </div> 
@@ -131,7 +155,6 @@
               <div class="col-lg-12 col-md-12 desc-comp-offer">
                 <div class="desc-comp-offer-cont">
                   <hgroup>
-                    <br>
                     <h5>TBD</h5>
                     <ul>
                       <!------------------------------paper_1-------------------------------->
