@@ -623,7 +623,7 @@ p {
 
     .hero {
         position: absolute;
-        top: 13%;
+        top: 15%;
         left: 50%;
         background: rgba(0, 0, 0, 0.4);
         border: 0px solid #fff;
@@ -641,7 +641,7 @@ p {
     }
 
     .hero h1 {
-        font-size: 2em;
+        font-size: 3em;
         color: #fff;
         font-weight: 500;
         width: 1400px;
@@ -650,7 +650,7 @@ p {
         opacity: 1;
         text-transform: none;
         letter-spacing: 2px;
-        margin-bottom: 30px;
+        margin-bottom: 3px;
     }
 
     .hero h1 span a {
@@ -659,7 +659,7 @@ p {
     }
 
     .hero h3 {
-        font-size: 1.5em;
+        font-size: 1.9em;
         color: #fff;
         text-transform: none;
         letter-spacing: 2px;
@@ -702,25 +702,26 @@ p {
     }
 
     @media (max-width: 900px) {
+
         .hero h1 {
-            font-size: 1.5em;
+            font-size: 2em;
             color: #fff;
             font-weight: 500;
-            width: 500px;
+            width: 700px;
             margin: 0;
             padding: 0;
             opacity: 1;
             letter-spacing: 2px;
-            margin-bottom: 30px;
+            margin-bottom: 3px;
         }
         .hero h3 {
-            font-size: 1em;
+            font-size: 1.4em;
             color: #fff;
             letter-spacing: 2px;
             line-height: 25px;
             margin-bottom: 15px;
         }
-        .hero h4 {
+        .hero h5 {
             font-size: 1em;
             color: #fff;
             letter-spacing: 2px;
@@ -732,29 +733,29 @@ p {
     @media (max-width: 575px) {
         .hero {
             position: absolute;
-            top: 13%;
+            top: 15%;
             padding: 50px 20px;
         }
         .hero h1 {
-            font-size: 1.2em;
+            font-size: 1.5em;
             color: #fff;
             font-weight: 500;
-            width: 400px;
+            width: 575px;
             margin: 0;
             padding: 0;
             opacity: 1;
             letter-spacing: 2px;
-            margin-bottom: 30px;
+            margin-bottom: 3px;
         }
         .hero h3 {
-            font-size: .9em;
+            font-size: 1em;
             color: #fff;
             letter-spacing: 2px;
             line-height: 25px;
             margin-bottom: 15px;
         }
-        .hero h4 {
-            font-size: .9em;
+        .hero h5 {
+            font-size: .8em;
             color: #fff;
             letter-spacing: 2px;
             line-height: 25px;
@@ -765,32 +766,32 @@ p {
     @media (max-width: 435px) {
         .hero {
             position: absolute;
-            top: 16%;
-            padding: 15px 0;
+            top: 15%;
+            padding: 30px 0;
             /*border: 3px solid #fff;*/
         }
         .hero h1 {
-            font-size: 1.2em;
+            font-size: 1em;
             color: #fff;
             font-weight: 500;
-            width: 350px;
+            width: 430px;
             margin: 0;
             padding: 0;
             opacity: 1;
             letter-spacing: 2px;
-            margin-bottom: 30px;
+            margin-bottom: 3px;
         }
         .hero h3 {
-            font-size: .9em;
+            font-size: .8em;
             color: #fff;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             line-height: 25px;
             margin-bottom: 15px;
         }
-        .hero h4 {
-            font-size: .9em;
+        .hero h5 {
+            font-size: .7em;
             color: #fff;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             line-height: 25px;
             margin-bottom: 15px;
         }
