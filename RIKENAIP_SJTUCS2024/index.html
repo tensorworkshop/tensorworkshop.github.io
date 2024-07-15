@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2nd RIKEN AIP – SJTU CS Joint Workshop on Machine Learning and Brain-like Intelligence</title>
+    <style>
+        body {
+            font-family: "Arial", Times, serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            text-align: center;
+            padding: 70px 0 60px 0;
+            background-color: #183570;
+            color: white;
+            width: 100%;
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0 10px 0;
+            background-color: #183570;
+            color: white;
+            width: 100%;
+            bottom: 0;
+        }
+        h1, h2, h3, h4 {
+            margin: 0;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: normal;
+        }
+        h3 {
+            text-align: left;
+            font-size: 2em;
+            font-weight: bold;
+            color: #183570;
+        }
+        h4 {
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        main {
+            padding: 50px 10%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #1E5799;
+            color: white;
+            font-weight: bold;
+        }
+        .talk-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .talk-title {
+            text-align: center;
+            font-weight: bold;
+            width: 100%;
+            padding-left: 1em;
+        }
+        .midfield-title {
+            text-align: center;
+            color: #3467A1;
+            width: 100%;
+            padding-left: 1em;
+        }
+        .speaker {
+            text-align: right;
+            font-style: italic;
+            width: 100%;
+            padding-right: 1em;
+        }
+        .divider {
+            width: 20%;
+            margin: 0.3em 0 0 0;
+            border-top: 8px solid #183570;
+        }
+        .list-module {
+            margin: 20px 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .list-module ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .list-module li {
+            margin: 15px 0;
+        }
+        .list-module li .presenter {
+            font-weight: bold;
+        }
+        .list-module li .title {
+            margin-top: 5px;
+            padding-left: 1em;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1450px) {
+            .divider {
+                width: 22%;
+            }
+        }
+        @media (max-width: 1200px) {
+            main {
+                padding: 40px 8%;
+            }
+            header {
+                padding: 60px 0 40px 0;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h3 {
+                font-size: 1.8em;
+            }
+            h4 {
+            font-size: 1.2em;
+            }
+            th, td {
+                padding: 12px;
+            }
+            .divider {
+                width: 23%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            main {
+                padding: 30px 5%;
+            }
+            header {
+                padding: 50px 0 30px 0;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h3 {
+                font-size: 1.6em;
+            }
+            h4 {
+            font-size: 1.1em;
+            }
+            th, td {
+                padding: 10px;
+            }
+            .divider {
+                width: 30%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            main {
+                padding: 20px 3%;
+            }
+            header {
+                padding: 40px 0 20px 0;
+            }
+            h1 {
+                font-size: 1.0em;
+            }
+            h2 {
+                font-size: 0.8em;
+            }
+            h3 {
+                font-size: 1.3em;
+            }
+            h4 {
+                font-size: 0.9em;
+            }
+            th, td {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+            .divider {
+                width: 45%;
+            }
+            .talk-details {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .talk-title, .midfield-title, .speaker {
+                text-align: left;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>The 2nd RIKEN AIP – SJTU CS Joint Workshop on</h2>
+        <h1>Machine Learning and Brain-like Intelligence</h1>
+    </header>
+    <main>
+        <h3>Schedule</h3>
+        <div class="divider"></div>
+        <h4>Aug 6, 2024 (Day 1)</h4>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Talk</th>
+                <th>Chair</th>
+            </tr>
+            <tr>
+                <td>9:30 – 9:40</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Opening Remarks</div>
+                        <div class="speaker">by Masashi Sugiyama</div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9:40 – 9:50</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Introduction of RIKEN-AIP</div>
+                        <div class="speaker">by Masashi Sugiyama (RIKEN)</div>
+                    </div>
+                </td>
+                <td rowspan="3">Qibin Zhao</td>
+            </tr>
+            <tr>
+                <td>9:50 – 10:00</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Introduction of SJTU-CS</div>
+                        <div class="speaker">by Liqing Zhang (SJTU)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>10:00 – 10:25</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Recent Advances in Robust Machine Learning</div>
+                        <div class="speaker">by Masashi Sugiyama (RIKEN)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>10:25 – 10:55</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="midfield-title">Coffee/Tea Break</div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10:55 – 11:20</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Tensor Manifold Representation for Multi-Model Visual Tasks</div>
+                        <div class="speaker">by Liqing Zhang (SJTU)</div>
+                    </div>
+                </td>
+                <td rowspan="2">Masashi Sugiyama</td>
+            </tr>
+            <tr>
+                <td>11:20 – 11:45</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Efficient and robust machine learning with tensor networks</div>
+                        <div class="speaker">by Qibin Zhao (RIKEN)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>11:45 – 11:55</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="midfield-title">Group Photo</div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>12:00 – 13:30</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="midfield-title">Lunch (all participants)</div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13:30 – 13:55</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Multimodal Affective Brain-Computer Interface and Application</div>
+                        <div class="speaker">by Baoliang Lyu (SJTU)</div>
+                    </div>
+                </td>
+                <td rowspan="3">Liqing Zhang</td>
+            </tr>
+            <tr>
+                <td>13:55 – 14:20</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">AI and Aging Brain: Machine Learning for BCI Applications in Healthy Aging and Neurobiomarkers</div>
+                        <div class="speaker">by Tomasz M. RUTKOWSKI (RIKEN)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>14:20 – 14:45</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Recognition in a physical world: an evolutionary approach</div>
+                        <div class="speaker">by Lin Gu (RIKEN)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>14:45 – 16:45</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="midfield-title">Coffee/Tea Break & Poster Session</div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16:45 – 17:10</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Cloud Native Architectures</div>
+                        <div class="speaker">by Minyi Guo (SJTU)</div>
+                    </div>
+                </td>
+                <td rowspan="3">Baoliang Lyu</td>
+            </tr>
+            <tr>
+                <td>17:10 - 17:35</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Key Technologies and Applications of Industrial Visual Inspection</div>
+                        <div class="speaker">by Lizhuang Ma (SJTU)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>17:35 – 18:00</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Generalizing importance weighting to a universal solver for distribution shift problems</div>
+                        <div class="speaker">by Gang Niu (RIKEN)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>18:00 – 20:00</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="midfield-title">Dinner & Networking (all paticipants)</div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <!-- 可以添加更多的会议安排 -->
+        </table><br>
+
+
+        <h4>Aug 7, 2024 (Day 2)</h4>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Talk</th>
+                <th>Chair</th>
+            </tr>
+            <tr>
+                <td>9:50 – 10:15</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Towards foundation model of mutli-dimensional time series</div>
+                        <div class="speaker">by Junchi Yan (SJTU)</div>
+                    </div>
+                </td>
+                <td rowspan="2">Gang Niu</td>
+            </tr>
+            <tr>
+                <td>10:15 – 10:40</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Toward Exploring Arbitrary Tensor Networks in Computation and Learning</div>
+                        <div class="speaker">by Chao Li (RIKEN)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>10:40 – 11:10</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="midfield-title">Coffee/Tea Break</div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11:10 – 11:35</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Systematic Reduction and Quantitative Assessment of Model Uncertainty in Medical Image Analysis</div>
+                        <div class="speaker">by Yang Yang (SJTU)</div>
+                    </div>
+                </td>
+                <td rowspan="2">Tomasz M. <br> RUTKOWSKI</td>
+            </tr>
+            <tr>
+                <td>11:35 – 12:00</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Generalisation in image-based Reinforcement learning via Symmetries in Transfomers</div>
+                        <div class="speaker">by Matthias Weissenbacher (RIKEN)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>12:00 – 13:30</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="midfield-title">Lunch (all participants)</div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13:30 – 13:55</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Multi-Modal Robust Speech Processing, Analysis and Recognition in Reality</div>
+                        <div class="speaker">by Yanmin Qian (SJTU)</div>
+                    </div>
+                </td>
+                <td rowspan="3">Lin Gu</td>
+            </tr>
+            <tr>
+                <td>13:55 – 14:20</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Provably Neural Active Learning Succeeds via Prioritizing Perplexing Samples</div>
+                        <div class="speaker">by Wei Huang (RIKEN)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>14:20 – 14:45</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Exploring Priors and Long-Term Memory in Transformers</div>
+                        <div class="speaker">by Yuwei Sun (RIKEN)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>14:45 – 16:45</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="midfield-title">Coffee/Tea Break & Poster Session</div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16:45 – 17:10</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Rapid Context Inference in a Thalamocortical Model Using Recurrent Neural Network</div>
+                        <div class="speaker">by Weilong Zheng (SJTU)</div>
+                    </div>
+                </td>
+                <td rowspan="3">Junchi Yan</td>
+            </tr>
+            <tr>
+                <td>17:10 - 17:35</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Transformer Efficiently Learns Low-dimensional Target Functions In-context</div>
+                        <div class="speaker">by Kazusato Oko/Yujin Song (RIKEN)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>17:35 – 18:00</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Analyzing Neural Networks through Equivalent Kernels</div>
+                        <div class="speaker">by Yilan Chen (RIKEN)</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>18:00</td>
+                <td>
+                    <div class="talk-details">
+                        <div class="talk-title">Closing Remarks</div>
+                        <div class="speaker">by Liqing Zhang</div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+
+            <!-- 可以添加更多的会议安排 -->
+        </table>
+        <br><br>
+
+
+        <h3>Poster session</h3>
+        <div class="divider"></div>
+        <h4>Aug 6, 2024 (Day 1)</h4>
+        <div class="list-module">
+            <ul>
+                <li>
+                    <div>Presenter: Andong Wang</div>
+                    <div>Title: <b>Tensor low-rankness for robust generalization</b></div>
+                </li>
+                <li>
+                    <div>Presenter: Yuning Qiu</div>
+                    <div>Title: <b>TBD</b></div>
+                </li>
+                <li>
+                    <div>Presenter: Reinmar Kobler</div>
+                    <div>Title: <b>Geometric Deep Learning to advance EEG BCI genearlization and EEG-fMRI fusion</b></div>
+                </li>
+                <li>
+                    <div>Presenter: Okan Koc</div>
+                    <div>Title: <b>TBD</b></div>
+                </li>
+                <li>
+                    <div>Presenter: Wei Wang</div>
+                    <div>Title: <b>Learning with Complementary Labels Revisited: The Selected-Completely-at-Random Setting Is More Practical</b></div>
+                </li>
+                <li>
+                    <div>Presenter: Huanjian Zhou</div>
+                    <div>Title: <b> Adaptive compleity of sampling</b></div>
+                </li>
+                <!-- 可以添加更多的列表项 -->
+            </ul>
+        </div>
+        <br>
+
+        <h4>Poster session (Aug 7, 2024)</h4>
+        <div class="list-module">
+            <ul>
+                <li>
+                    <div>Presenter: Takashi Ishida</div>
+                    <div>Title: <b>TBD</b></div>
+                </li>
+                <li>
+                    <div>Presenter: Simon Kojima</div>
+                    <div>Title: <b>Spatial Auditory Soundscapes for Developing Digital Neurobiomarkers or Cognitive Interventions in Early-onset Dementia Based on EEG and fNIRS Machine-learning Analysis</b></div>
+                </li>
+                <li>
+                    <div>Presenter: Mingyuan Bai</div>
+                    <div>Title: <b>Diffusion Models for Adversarial Purification</b></div>
+                </li>
+                <li>
+                    <div>Presenter: Haonan Huang</div>
+                    <div>Title: <b>Adversarially Robust Multi-view Learning: Attack and Defense</b></div>
+                </li>
+                <li>
+                    <div>Presenter: Hailin Wang</div>
+                    <div>Title: <b>Guaranteed Tensor Recovery fused Low-rankness and Smoothness</b></div>
+                </li>
+                <!-- 可以添加更多的列表项 -->
+            </ul>
+        </div><br><br>
+
+        <h3>Venue</h3>
+        <div class="divider"></div>
+        <p>Nihonbashi 1-chome Mitsui Building, 15th floor, 1-4-1 Nihonbashi, Chuo-ku, Tokyo</p>
+
+        <!-- ======= Map ======= -->
+          <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.775329456104!2d139.77244341562798!3d35.682533680193956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889564cd58693%3A0x3b40159699057160!2sRIKEN%20Center%20for%20Advanced%20Intelligence%20Project%20(AIP)!5e0!3m2!1szh-CN!2sjp!4v1588861453019!5m2!1szh-CN!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <br>
+
+    </main>
+    <br><br><br><br><br><br>
+    <footer>
+        <p style="color:#778899">Copyrights &copy; 2024 TLT. All rights reserved.</p>
+    </footer>
+</body>
+</html>
