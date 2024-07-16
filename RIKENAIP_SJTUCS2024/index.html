@@ -99,7 +99,7 @@
         }
         .divider {
             width: 20%;
-            margin: 0.3em 0 0 0;
+            margin: 0.3em 0 0.5em 0;
             border-top: 8px solid #183570;
         }
         .list-module {
@@ -123,6 +123,23 @@
         .list-module li .title {
             margin-top: 5px;
             padding-left: 1em;
+        }
+        .download-link {
+            font-size: 1em;
+            margin-top: 15px;
+            color: #608ACD; /* 链接默认颜色 */
+            text-decoration: none; /* 去掉下划线 */
+        }
+
+        /* 鼠标悬停时的颜色 */
+        .download-link:hover {
+            color: #183570; /* 鼠标悬停时的颜色 */
+            text-decoration: underline; /* 悬停时添加下划线 */
+        }
+
+        /* 链接被访问后的颜色 */
+        .download-link:visited {
+            color: purple; /* 已访问链接的颜色 */
         }
 
         /* 响应式设计 */
@@ -185,6 +202,9 @@
             .divider {
                 width: 30%;
             }
+            .download-link {
+                font-size: 0.9em;
+            }
         }
 
         @media (max-width: 480px) {
@@ -223,6 +243,9 @@
                 padding-left: 0;
                 padding-right: 0;
             }
+            .download-link {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
@@ -234,6 +257,7 @@
     <main>
         <h3>Schedule</h3>
         <div class="divider"></div>
+        <a href="RIKEN_SJTU_WorkshopProgram.pdf" class="download-link"><b>Download schedule as a PDF</b></a>
         <h4>Aug 6, 2024 (Day 1)</h4>
         <table>
             <tr>
